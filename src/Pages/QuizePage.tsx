@@ -173,7 +173,7 @@ export default function QuizePage() {
             <Grid
               size={"grow"}
               component="div"
-              className="border-0 bg-secondary p-5 rounded-xl"
+              className="border-0 bg-secondary p-5 rounded-xl select-none  "
             >
               <Stack component="div" className="h-full ">
                 <TypeAnimation
@@ -283,7 +283,7 @@ export default function QuizePage() {
           </Box>
           <Box
             component="div"
-            className=" mt-5 grid sm:grid-cols-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  w-4/5 m-auto gap-4 "
+            className=" my-5 grid sm:grid-cols-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  w-4/5 m-auto gap-4 "
           >
             {copyDataQuestion.map((question, i) => (
               <Box

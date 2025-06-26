@@ -16,9 +16,8 @@ export default function RouterApp() {
             width="100%"
             sx={{
               "::selection": {
-                backgroundColor: "#766ddd",
+                backgroundColor: "#766dddc0",
                 color: "white",
-                opacity:"0.5"
               },
             }}
           >
