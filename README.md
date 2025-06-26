@@ -1,3 +1,6 @@
+# Summary
+This project is a modern educational platform built with React and TypeScript, aimed at helping users improve their communication skills. It includes a structured course, followed by an interactive quiz to assess knowledge. Upon completion, users receive instant feedback and detailed corrections for any incorrect answers. The platform is fully responsive and designed with a clean, user-friendly interface.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
