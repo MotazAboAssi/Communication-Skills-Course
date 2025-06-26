@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import { Stack } from "@mui/material";
 import { HomePage, NotFoundPage } from "../Pages";
@@ -18,9 +17,12 @@ export default function RouterApp() {
           >
             <Header />
             <Routes>
-              <Route index element={<HomePage />} />
-              <Route path="/course" element={<HomePage />} />
-              <Route path="/quize" element={<QuizePage />} />
+              <Route path="/communication-skills-course">
+                <Route index element={<HomePage />} />
+                <Route path="course" element={<HomePage />} />
+                <Route path="quize" element={<QuizePage />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Route>
               <Route path="/*" element={<NotFoundPage />} />
             </Routes>
             <Footer />

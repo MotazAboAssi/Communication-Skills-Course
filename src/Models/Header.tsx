@@ -28,11 +28,11 @@ interface TypeLink {
 const drawerWidth = 240;
 const navItems: TypeLink[] = [
   {
-    path: "/course",
+    path: "course",
     title: "Course",
   },
   {
-    path: "/quize",
+    path: "quize",
     title: "Quize ",
   },
 ];
@@ -64,7 +64,7 @@ export default function Header(props: Props) {
       <List>
         {navItems.map((item, index) => (
           <ListItem key={index} disablePadding className="border-b-2 border-black">
-            <Link to={item.path}>
+            <Link to={`/communication-skills-course/${item.path}`}>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.title} />
               </ListItemButton>
@@ -128,7 +128,7 @@ export default function Header(props: Props) {
               }}
             >
               {navItems.map((item, index) => (
-                <Link key={index} to={item.path}>
+                <Link key={index} to={`/communication-skills-course/${item.path}`}>
                   <Button
                     sx={{
                       color: "#766ddd",
