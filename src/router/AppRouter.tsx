@@ -14,6 +14,12 @@ export default function RouterApp() {
             justifyContent="space-between"
             height="100vh"
             width="100%"
+            sx={{
+              "::selection": {
+                backgroundColor: "#766ddd",
+                color: "white",
+              },
+            }}
           >
             <Header />
             <Routes>

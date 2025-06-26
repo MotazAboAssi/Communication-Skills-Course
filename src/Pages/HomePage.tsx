@@ -115,33 +115,36 @@ export default function HomePage() {
             </Link>
           </Avatar>
 
-          <Grid component="div" size={{ xs: 12, md: 3 }}>
+          <Grid component="div" size={{ xs: 12, md: 4 }} className="">
             <Box
-              component="ul"
+              component="div"
               id="box-links"
               sx={{ fontFamily: ["Roboto Slab"] }}
-              className="p-5 mt-20 sticky overflow-hidden top-20 border-0 rounded-xl bg-gray-300  "
+              className=" mt-20 sticky overflow-hidden top-20 border-0 rounded-xl bg-gray-300  "
             >
               <motion.div
                 style={{
                   scaleX: scaleX,
                   border: "2px solid #766ddd",
                   width: "100%",
+                  padding:"0"
                 }}
               />
-              <Typography variant="h6" className="uppercase py-5">
+              <Typography variant="h6" className="uppercase py-5 pl-2">
                 in this article :
               </Typography>
+              <Box component="ul" className="p-7 pt-0">
+
               {linksID.map((link, index) => (
                 <Box
-                  component="li"
-                  id="links"
-                  key={index}
-                  sx={{
+                component="li"
+                id="links"
+                key={index}
+                sx={{
                     fontSize: "1rem",
                   }}
                   className=" list-decimal mb-5 text-xs "
-                >
+                  >
                   <Link
                     activeClass="active"
                     to={link.id}
@@ -150,11 +153,12 @@ export default function HomePage() {
                     offset={-100}
                     duration={500}
                     className=" cursor-pointer"
-                  >
+                    >
                     {link.name}
                   </Link>
                 </Box>
               ))}
+              </Box>
             </Box>
           </Grid>
           <Grid size={{ xs: 12, md: 8 }}>

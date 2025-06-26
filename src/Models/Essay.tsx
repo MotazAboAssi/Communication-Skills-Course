@@ -3,7 +3,6 @@ import type { EssayType } from "../types/EssayType";
 import { motion } from "framer-motion";
 
 export default function Essay({ essay }: { essay: EssayType }) {
-  // const [sign, setSign] = useState(false);
   let sign = false;
   const delay = {
     duration: 0.5,
