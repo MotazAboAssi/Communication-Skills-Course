@@ -46,14 +46,14 @@ export const dataHomePage: EssayType[] = [
   {
     image: picture1,
     titleEssay: (
-      <>
+      <Box>
         <Box
           component="p"
           id="What-Are-Communication-Skills?"
           className="pb-20"
         />
         <Box component="span">What Are Communication Skills?</Box>
-      </>
+      </Box>
     ),
     content: [
       {

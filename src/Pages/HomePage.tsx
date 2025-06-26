@@ -127,37 +127,35 @@ export default function HomePage() {
                   scaleX: scaleX,
                   border: "2px solid #766ddd",
                   width: "100%",
-                  padding:"0"
+                  padding: "0",
                 }}
               />
               <Typography variant="h6" className="uppercase py-5 pl-2">
                 in this article :
               </Typography>
               <Box component="ul" className="p-7 pt-0">
-
-              {linksID.map((link, index) => (
-                <Box
-                component="li"
-                id="links"
-                key={index}
-                sx={{
-                    fontSize: "1rem",
-                  }}
-                  className=" list-decimal mb-5 text-xs "
+                {linksID.map((link, index) => (
+                  <Box
+                    component="li"
+                    id="links"
+                    key={index}
+                    sx={{
+                      fontSize: "1rem",
+                    }}
+                    className=" list-decimal mb-5 text-xs "
                   >
-                  <Link
-                    activeClass="active"
-                    to={link.id}
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
-                    className=" cursor-pointer"
+                    <Link
+                      activeClass="active"
+                      to={link.id}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      className=" cursor-pointer"
                     >
-                    {link.name}
-                  </Link>
-                </Box>
-              ))}
+                      {link.name}
+                    </Link>
+                  </Box>
+                ))}
               </Box>
             </Box>
           </Grid>

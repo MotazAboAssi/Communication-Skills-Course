@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import type { EssayType } from "../types/EssayType";
 import { motion } from "framer-motion";
 
-export default function Essay({ essay }: { essay: EssayType }) {
+export default function Essay({ essay }: { essay: EssayType}) {
   let sign = false;
   const delay = {
     duration: 0.5,
@@ -35,7 +35,7 @@ export default function Essay({ essay }: { essay: EssayType }) {
         viewport={{ once: true }}
         exit={{ opacity: 0 }}
         transition={delay}
-        className=" text-lg md:text-2xl lg:text-4xl font-extrabold"
+        className=" text-xl md:text-2xl lg:text-4xl font-extrabold"
       >
         {essay.titleEssay}
       </motion.h3>
@@ -53,7 +53,7 @@ export default function Essay({ essay }: { essay: EssayType }) {
         transition={delay}
       >
         <br />
-        <Box component="div" className="font-bold text-xl md:text-2xl pb-5">
+        <Box component="div" className="font-bold text-lg md:text-2xl pb-5">
           {item.title}
         </Box>
         {item.body.map((cont, ind) => (
