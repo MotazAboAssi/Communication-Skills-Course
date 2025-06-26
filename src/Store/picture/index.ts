@@ -1,0 +1,9 @@
+export { default as pictureHomePage } from "./HomePage.png";
+export { default as picture1 } from "./picture1.png";
+export { default as picture2 } from "./picture2.png";
+export { default as picture3 } from "./picture3.png";
+export { default as picture4 } from "./picture4.png";
+export { default as picture5 } from "./picture5.png";
+export { default as picture6 } from "./picture6.png";
+export { default as picture7 } from "./picture7.png";
+export { default as picture8 } from "./picture8.png";
