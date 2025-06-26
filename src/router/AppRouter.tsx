@@ -18,6 +18,7 @@ export default function RouterApp() {
               "::selection": {
                 backgroundColor: "#766ddd",
                 color: "white",
+                opacity:"0.5"
               },
             }}
           >
