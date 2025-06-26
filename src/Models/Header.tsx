@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { logoWeb } from "../assets/picture";
 import {
   AppBar,
@@ -63,13 +63,22 @@ export default function Header(props: Props) {
       <Divider />
       <List>
         {navItems.map((item, index) => (
-          <ListItem key={index} disablePadding className="border-b-2 border-black">
-            <Link to={`/communication-skills-course/${item.path}`}>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item.title} />
+          <Link
+            to={`/communication-skills-course/${item.path}`}
+          >
+            <ListItem
+              key={index}
+              disablePadding
+              sx={{
+                borderBottom: "2px solid white",
+                color: "white",
+              }}
+            >
+              <ListItemButton sx={{ textAlign: "start" ,fontSize:"3rem"}}>
+                <ListItemText primary={item.title}  />
               </ListItemButton>
-            </Link>
-          </ListItem>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </Box>
@@ -128,7 +137,10 @@ export default function Header(props: Props) {
               }}
             >
               {navItems.map((item, index) => (
-                <Link key={index} to={`/communication-skills-course/${item.path}`}>
+                <Link
+                  key={index}
+                  to={`/communication-skills-course/${item.path}`}
+                >
                   <Button
                     sx={{
                       color: "#766ddd",

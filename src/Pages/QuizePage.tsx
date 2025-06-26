@@ -75,6 +75,7 @@ export default function QuizePage() {
                     fontFamily: '"Fira Sans", sans-serif',
                     fontWeight: 900,
                     fontSize: { xs: "inherit", lg: "4rem", xl: "6rem" },
+                    textAlign:"center"
                   }}
                 >
                   Test your knowledge on
@@ -86,6 +87,7 @@ export default function QuizePage() {
                     fontWeight: 900,
                     color: "#766ddd",
                     fontSize: { xs: "inherit", lg: "4rem", xl: "6rem" },
+                    textAlign:"center"
                   }}
                 >
                   communication
@@ -176,6 +178,7 @@ export default function QuizePage() {
               className="border-0 bg-secondary p-5 rounded-xl select-none  "
             >
               <Stack component="div" className="h-full ">
+                <Typography>limit time : 20s</Typography>
                 <TypeAnimation
                   key={`${index}`}
                   preRenderFirstString={true}
