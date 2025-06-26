@@ -62,7 +62,7 @@ export default function CircularProgressWithLabel(
         <Typography
           variant={isSmUp ? "h4" : "inherit"}
           component="div"
-          sx={{ color: "text.secondary" }}
+          sx={{ color: "text.secondary", userSelect:"none" }}
         >{`${progress / 10}s`}</Typography>
       </Box>
     </Box>

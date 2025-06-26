@@ -21,7 +21,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 export default function QuizePage() {
   const [accept, setAccept] = useState(false);
-  const [index, setIndex] = useState(25);
+  const [index, setIndex] = useState(0);
   const [click, setClick] = useState(false);
   const [rateQuestion, setRateQuestion] = useState(0);
   const [selectedValue, setSelectedValue] = useState<number | null>(null);
